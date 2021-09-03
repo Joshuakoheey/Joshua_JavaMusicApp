@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <ImageButton
+        android:id="@+id/changemail_b_signout2"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/changeusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemail_b_signout"
+        app:srcCompat="@drawable/changeemail1_b" />
+
+    <ImageButton
+        android:id="@+id/delete_b_signout"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/b1_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemail_b_signout2"
+        app:srcCompat="@drawable/b1_bg" />
+
+    <ImageButton
+        android:id="@+id/home_b_signout"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="13dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="84dp"
+        android:text="Confirm Sign Out?"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signout_b_signout" />
+
+    <ImageButton
+        android:id="@+id/changemail_b_signout"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/changeemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/changeemail1_b" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:foreground="@drawable/settings_p_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_p_8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="275dp"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/settings_b_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/confirm_b_signout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="230dp"
+        android:foreground="@drawable/yes_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/yes_b" />
+
+    <ImageButton
+        android:id="@+id/cancel_b_signout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="84dp"
+        android:foreground="@drawable/no_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/no_b" />
+
+    <ImageView
+        android:id="@+id/signout_b_signout"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/b1_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_b_signout"
+        app:srcCompat="@drawable/b1_bg" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/signout_b_signout"
+        app:layout_constraintEnd_toEndOf="@+id/signout_b_signout"
+        app:layout_constraintStart_toStartOf="@+id/signout_b_signout"
+        app:layout_constraintTop_toTopOf="@+id/signout_b_signout" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_b_signout"
+        app:layout_constraintEnd_toEndOf="@+id/delete_b_signout"
+        app:layout_constraintStart_toStartOf="@+id/delete_b_signout"
+        app:layout_constraintTop_toTopOf="@+id/delete_b_signout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

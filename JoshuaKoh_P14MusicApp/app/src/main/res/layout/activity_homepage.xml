@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <ImageButton
+        android:id="@+id/home_b_home"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/library_b_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/search_b_home"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageButton
+        android:id="@+id/library_b_home"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/library_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageButton
+        android:id="@+id/search_b_home"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/search_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="433dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:foreground="@drawable/p_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radios_b2"
+        app:srcCompat="@drawable/p_2" />
+
+    <ImageButton
+        android:id="@+id/radios_b2"
+        android:layout_width="423dp"
+        android:layout_height="139dp"
+        android:foreground="@drawable/p_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/p_2" />
+
+    <ImageButton
+        android:id="@+id/radiometalmayham_b2"
+        android:layout_width="73dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@drawable/radio1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/radio1" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/p_11"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_b_home"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_11" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metal Mayham"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/r_metalmayham_b_home" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txtview_home"
+        app:srcCompat="@drawable/p_2" />
+
+    <ImageButton
+        android:id="@+id/settings_b_home"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:foreground="@drawable/settings_p_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_p_8" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="275dp"
+        android:text="Welcome Back,"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/settings_b_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_txtview_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="name"
+        android:textColor="#2EBBAD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Recent Songs"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Radio Zone"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radio_b_home" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:text="Requests"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="6dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="92dp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_b_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_13" />
+
+    <ImageButton
+        android:id="@+id/radio_b_home"
+        android:layout_width="423dp"
+        android:layout_height="139dp"
+        android:foreground="@drawable/p_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/p_2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="6dp"
+        android:layout_height="96dp"
+        android:translationZ="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_b_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:srcCompat="@drawable/p_13" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="6dp"
+        android:layout_height="96dp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_b_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/p_13" />
+
+    <ImageButton
+        android:id="@+id/r_metalmayham_b_home"
+        android:layout_width="73dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@drawable/radio1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/radio1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/p_11"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_b_home"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_11" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metal Mayham"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/r_metalmayham_b_home" />
+
+    <ImageButton
+        android:id="@+id/r_hiphot_b_home"
+        android:layout_width="73dp"
+        android:layout_height="72dp"
+        android:foreground="@drawable/radio2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:srcCompat="@drawable/radio2" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radios_b2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:srcCompat="@drawable/p_11" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hip-Hot"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/r_hiphot_b_home" />
+
+    <ImageButton
+        android:id="@+id/r_rockotheages_b_home"
+        android:layout_width="73dp"
+        android:layout_height="72dp"
+        android:foreground="@drawable/radio3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/radio3" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/p_11"
+        app:layout_constraintBottom_toBottomOf="@+id/radios_b2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/p_11" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock o' the Ages"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/r_rockotheages_b_home" />
+
+    <ImageButton
+        android:id="@+id/r_poppinpop_b_home"
+        android:layout_width="73dp"
+        android:layout_height="72dp"
+        android:foreground="@drawable/radio4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:srcCompat="@drawable/radio4" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/p_11"
+        app:layout_constraintBottom_toBottomOf="@+id/radios_b2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:srcCompat="@drawable/p_11" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poppin' Pop"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/r_poppinpop_b_home" />
+
+    <ImageButton
+        android:id="@+id/requests_b_home"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:foreground="@drawable/p_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/p_14" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Can't find a song you want?"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/requests_b_home"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request it by clicking on the megaphone icon!"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_home"
+        android:layout_width="375dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

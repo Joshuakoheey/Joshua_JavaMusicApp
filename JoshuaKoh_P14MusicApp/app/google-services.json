@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741789090573",
+    "project_id": "joshuap14-authentication",
+    "storage_bucket": "joshuap14-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741789090573:android:e3d430a9bda8b14714e644",
+        "android_client_info": {
+          "package_name": "com.example.p14_musicstream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741789090573-51oo2lle7t4418einm6558bpcnan1jl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz5ipOI0eZpji8sRRX-8pmwhn5iTiKPHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741789090573-51oo2lle7t4418einm6558bpcnan1jl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

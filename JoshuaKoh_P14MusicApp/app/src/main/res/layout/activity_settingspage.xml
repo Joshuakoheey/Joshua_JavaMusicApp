@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageButton
+        android:id="@+id/changeusername_b_settings"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="2dp"
+        android:foreground="@drawable/changeusername"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemail_b_settings"
+        app:srcCompat="@drawable/changeemail_b" />
+
+    <ImageButton
+        android:id="@+id/delete_b_settings"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/b1_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeusername_b_settings"
+        app:srcCompat="@drawable/b1_bg" />
+
+    <ImageButton
+        android:id="@+id/home_b_settings"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="13dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="275dp"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/settings_b_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/changemail_b_settings"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/changeemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/changeemail_b" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:foreground="@drawable/settings_p_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_p_8" />
+
+    <ImageButton
+        android:id="@+id/signout_b_settings"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/b1_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_b_settings"
+        app:srcCompat="@drawable/b1_bg" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="13dp"
+        android:text="Sign Out"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/signout_b_settings"
+        app:layout_constraintEnd_toEndOf="@+id/signout_b_settings"
+        app:layout_constraintStart_toStartOf="@+id/signout_b_settings"
+        app:layout_constraintTop_toTopOf="@+id/signout_b_settings" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_b_settings"
+        app:layout_constraintEnd_toEndOf="@+id/delete_b_settings"
+        app:layout_constraintStart_toStartOf="@+id/delete_b_settings"
+        app:layout_constraintTop_toTopOf="@+id/delete_b_settings" />
+</androidx.constraintlayout.widget.ConstraintLayout>

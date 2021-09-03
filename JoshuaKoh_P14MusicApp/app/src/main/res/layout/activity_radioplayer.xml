@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mplayerbg_1">
+
+
+    <ImageButton
+        android:id="@+id/exit_b_radioplayer"
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:foreground="@drawable/mplayerdown_removebg"
+        android:onClick="exitandadd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cover_v_radioplayer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="67dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/playpause_b_radioplayer"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="72dp"
+        android:background="#00ffffff"
+        android:onClick="playOrPauseMusic"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mplayerplay_removebg"
+        app:layout_constraintEnd_toStartOf="@+id/nextsong_b_radioplayer"
+        app:layout_constraintStart_toEndOf="@+id/prevsong_b_radioplayer"
+        app:layout_constraintTop_toBottomOf="@+id/timectrl_f_radioplayer" />
+
+    <ImageButton
+        android:id="@+id/prevsong_b_radioplayer"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        android:background="@null"
+        android:foreground="@drawable/mplayerback_removebg"
+        android:onClick="playprev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timectrl_f_radioplayer" />
+
+    <ImageButton
+        android:id="@+id/nextsong_b_radioplayer"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="92dp"
+        android:background="@null"
+        android:foreground="@drawable/mplayernext_removebg"
+        android:onClick="playnext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timectrl_f_radioplayer" />
+
+    <ImageButton
+        android:id="@+id/loop_b_radioplayer"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="loopsong"
+        android:scaleType="fitStart"
+        android:src="@drawable/unlooped"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shuffle_b_radioplayer" />
+
+    <ImageButton
+        android:id="@+id/shuffle_b_radioplayer"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="shufflesong"
+        android:scaleType="fitEnd"
+        android:src="@drawable/unshuffled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title_txt_radioplayer"
+        android:layout_width="350dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="436dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/artist_txt_radioplayer"
+        android:layout_width="204dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Artist"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_txt_radioplayer" />
+
+    <SeekBar
+        android:id="@+id/timectrl_f_radioplayer"
+        android:layout_width="296dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_txt_radioplayer" />
+
+    <TextView
+        android:id="@+id/durationstart_tv_radioplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:text="0.00"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/timectrl_f_radioplayer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_txt_radioplayer" />
+
+    <TextView
+        android:id="@+id/durationend_tv_radioplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:text="0.30"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timectrl_f_radioplayer"
+        app:layout_constraintTop_toBottomOf="@+id/artist_txt_radioplayer" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="6dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volctrl_fl_radioplayer"
+        app:srcCompat="@drawable/audio_b_removebg" />
+
+    <FrameLayout
+        android:id="@+id/volctrl_fl_radioplayer"
+        android:layout_width="32dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SeekBar
+            android:id="@+id/volctrl_f_radioplayer"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:rotation="270" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

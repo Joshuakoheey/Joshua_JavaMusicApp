@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_libraryfavourites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <ImageButton
+        android:id="@+id/home_b_libraryfavourites"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/library_b_libraryfavourites"
+        app:layout_constraintStart_toEndOf="@+id/search_b_libraryfavourites"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageButton
+        android:id="@+id/library_b_libraryfavourites"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/library_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageButton
+        android:id="@+id/search_b_libraryfavourites"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/search_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <TextView
+        android:id="@+id/downloads_b_libraryfavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="39dp"
+        android:text="Downloads"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/collection_b_libraryfavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:text="Collection"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/favourites_b_libraryfavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/ulfavourites"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/downloads_b_libraryfavourites"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toEndOf="@+id/collection_b_libraryfavourites"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:srcCompat="@drawable/line_p" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="275dp"
+        android:text="Library"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/settings_b_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:foreground="@drawable/favouriteimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favouriteimage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_favourites"
+        android:layout_width="345dp"
+        android:layout_height="560dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="19dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourites_b_libraryfavourites" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

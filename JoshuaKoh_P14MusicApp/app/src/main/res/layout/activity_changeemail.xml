@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <ImageButton
+        android:id="@+id/cancel_b_changeemail"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="84dp"
+        android:foreground="@drawable/no_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retype_txt_changeemail"
+        app:srcCompat="@drawable/no_b" />
+
+    <ImageButton
+        android:id="@+id/confirm_b_changeemail"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="249dp"
+        android:foreground="@drawable/yes_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:srcCompat="@drawable/yes_b" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retype_txt_changeemail"
+        app:srcCompat="@drawable/line_p" />
+
+    <EditText
+        android:id="@+id/retype_txt_changeemail"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Retype Email"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_txt_changeemail" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/new_txt_changeemail"
+        app:srcCompat="@drawable/line_p" />
+
+    <EditText
+        android:id="@+id/new_txt_changeemail"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:hint="New Email"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldemail_txt_changeemail" />
+
+    <TextView
+        android:id="@+id/oldemail_txt_changeemail"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="false"
+        android:hint="Current Email"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signout_b_settings3" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/oldemail_txt_changeemail"
+        app:srcCompat="@drawable/line_p" />
+
+    <ImageButton
+        android:id="@+id/home_b_changeemail"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_changeemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <ImageButton
+        android:id="@+id/signout_b_settings3"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="3dp"
+        android:foreground="@drawable/b1_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/b1_bg" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Email Address"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/signout_b_settings3"
+        app:layout_constraintEnd_toEndOf="@+id/signout_b_settings3"
+        app:layout_constraintStart_toStartOf="@+id/signout_b_settings3"
+        app:layout_constraintTop_toTopOf="@+id/signout_b_settings3" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:foreground="@drawable/settings_p_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_p_8" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="234dp"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

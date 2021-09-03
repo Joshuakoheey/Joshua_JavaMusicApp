@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageButton
+        android:id="@+id/home_b_requests"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="12dp"
+        android:foreground="@drawable/home_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/home_b_requests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_9" />
+
+    <ImageButton
+        android:id="@+id/confirm_b_requests"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="370dp"
+        android:foreground="@drawable/yes_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_txt_requests"
+        app:srcCompat="@drawable/yes_b" />
+
+    <ImageButton
+        android:id="@+id/cancel_b_requests"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="84dp"
+        android:foreground="@drawable/no_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_txt_requests"
+        app:srcCompat="@drawable/no_b" />
+
+    <EditText
+        android:id="@+id/artist_txt_requests"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter Artist"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songname_txt_requests" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/artist_txt_requests"
+        app:srcCompat="@drawable/line_p" />
+
+    <EditText
+        android:id="@+id/songname_txt_requests"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter Song"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="313dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/songname_txt_requests"
+        app:srcCompat="@drawable/line_p" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="234dp"
+        android:text="Requests"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:foreground="@drawable/invert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

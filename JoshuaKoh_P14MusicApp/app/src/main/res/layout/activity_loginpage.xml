@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/iv1_login"
+        android:layout_width="81dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_b_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_1" />
+
+    <TextView
+        android:id="@+id/tv1_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_bg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo1_login" />
+
+    <ImageButton
+        android:id="@+id/login_b_login"
+        android:layout_width="381dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="75dp"
+        android:background="#00FFFFFF"
+        android:cropToPadding="true"
+        android:foreground="@drawable/b_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/name_bg3"
+        android:layout_width="369dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo1_login"
+        app:srcCompat="@drawable/b_2" />
+
+    <EditText
+        android:id="@+id/email_txt_login"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/name_bg3"
+        app:layout_constraintEnd_toEndOf="@+id/name_bg3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/name_bg3"
+        app:layout_constraintTop_toTopOf="@+id/name_bg3"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <ImageView
+        android:id="@+id/name_bg4"
+        android:layout_width="369dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_bg3"
+        app:srcCompat="@drawable/b_2" />
+
+    <EditText
+        android:id="@+id/pass_txt_login"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="9dp"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/name_bg4"
+        app:layout_constraintEnd_toEndOf="@+id/name_bg4"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/name_bg4"
+        app:layout_constraintTop_toTopOf="@+id/name_bg4"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <ImageView
+        android:id="@+id/logo1_login"
+        android:layout_width="138dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whitelogo" />
+
+    <TextView
+        android:id="@+id/tv2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/login_b_login"
+        app:layout_constraintEnd_toEndOf="@+id/login_b_login"
+        app:layout_constraintStart_toStartOf="@+id/login_b_login"
+        app:layout_constraintTop_toTopOf="@+id/login_b_login"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <ImageButton
+        android:id="@+id/back_b_login"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:foreground="@drawable/back_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
